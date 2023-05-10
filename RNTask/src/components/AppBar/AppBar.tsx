@@ -2,6 +2,7 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import {useAppTheme} from '@root/theme/theme';
 import {Avatar} from 'react-native-paper';
+import {TouchFiller} from '@root/components';
 
 const AppBar = ({
   header,
@@ -31,6 +32,7 @@ const AppBar = ({
           width: 50,
           height: 50,
         }}>
+        <TouchFiller onPress={() => {}} />
         <Avatar.Icon
           size={50}
           icon="chevron-left"
