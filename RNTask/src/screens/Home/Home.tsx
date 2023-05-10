@@ -16,7 +16,7 @@ const Home = () => {
           //backgroundColor: colors.primary,
           minHeight: '100%',
         }}>
-        <AppBar header="Restaurants" />
+        <AppBar header="Restaurants" hasBack />
       </ScrollView>
     </SafeAreaView>
   );

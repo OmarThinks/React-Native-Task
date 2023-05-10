@@ -9,9 +9,35 @@ const AppBar = ({
   hasBack = false,
 }: {
   header: string;
-  hasBack: boolean;
+  hasBack?: boolean;
 }) => {
   const colors = useAppTheme().colors;
+
+  const backButton = hasBack ? (
+    <View
+      style={{
+        backgroundColor: colors.buttonBg,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: 50,
+        height: 50,
+      }}>
+      <TouchFiller onPress={() => {}} />
+      <Avatar.Icon
+        size={50}
+        icon="chevron-left"
+        style={{
+          borderRadius: 10,
+          backgroundColor: colors.buttonBg,
+        }}
+        color={colors.buttonIcon}
+      />
+    </View>
+  ) : (
+    <View />
+  );
+
   return (
     <View
       style={{
@@ -23,26 +49,7 @@ const AppBar = ({
         //backgroundColor: 'red',
         paddingHorizontal: 20,
       }}>
-      <View
-        style={{
-          backgroundColor: colors.buttonBg,
-          borderRadius: 10,
-          justifyContent: 'center',
-          alignItems: 'center',
-          width: 50,
-          height: 50,
-        }}>
-        <TouchFiller onPress={() => {}} />
-        <Avatar.Icon
-          size={50}
-          icon="chevron-left"
-          style={{
-            borderRadius: 10,
-            backgroundColor: colors.buttonBg,
-          }}
-          color={colors.buttonIcon}
-        />
-      </View>
+      {backButton}
       <Text
         style={{
           fontSize: 25,
