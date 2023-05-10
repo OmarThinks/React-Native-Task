@@ -25,6 +25,7 @@ const AppBar = ({
         alignItems: 'center',
         width: 50,
         height: 50,
+        overflow: 'hidden',
       }}>
       <TouchFiller
         onPress={() => {
@@ -35,7 +36,6 @@ const AppBar = ({
         size={50}
         icon="chevron-left"
         style={{
-          borderRadius: 10,
           backgroundColor: colors.buttonBg,
         }}
         color={colors.buttonIcon}

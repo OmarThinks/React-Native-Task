@@ -1,7 +1,7 @@
-import AppBar from '@root/components/AppBar/AppBar';
+import {AppBar} from '@root/components';
 import React from 'react';
 import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
-import {useAppTheme} from '@root/theme/theme';
+import {useAppTheme} from '../../theme/theme';
 
 const RestaurantDetails = () => {
   const colors = useAppTheme().colors;
