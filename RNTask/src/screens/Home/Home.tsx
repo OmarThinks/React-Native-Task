@@ -16,8 +16,6 @@ const Home = () => {
           //backgroundColor: colors.primary,
           minHeight: '100%',
         }}>
-        <Text>Hey</Text>
-        <Button icon="camera">Press me</Button>
         <AppBar header="Restaurants" />
       </ScrollView>
     </SafeAreaView>
