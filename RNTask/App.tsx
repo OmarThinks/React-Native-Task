@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {SafeAreaView, ScrollView, StatusBar, Text} from 'react-native';
 import {Provider as PaperProvider} from 'react-native-paper';
+import {Button} from 'react-native-paper';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +13,7 @@ function TestScreen(): JSX.Element {
       <StatusBar />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <Text>Hey</Text>
+        <Button icon="camera">Press me</Button>
       </ScrollView>
     </SafeAreaView>
   );
