@@ -6,6 +6,11 @@ const theme = {
     ...DefaultTheme.colors,
     //primary: 'tomato',
     //secondary: 'yellow',
+    buttonBg: '#00000',
+    buttonIcon: '#FFFFF',
+    header: '#000000',
+    imageHeader: '#FFFFFF',
+    smallButtonText: '#000000',
   },
 };
 
