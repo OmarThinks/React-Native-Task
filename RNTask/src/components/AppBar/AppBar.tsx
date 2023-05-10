@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import {useAppTheme} from '@root/theme/theme';
+import {Avatar} from 'react-native-paper';
 
 const AppBar = ({
   header,
@@ -30,16 +31,15 @@ const AppBar = ({
           width: 50,
           height: 50,
         }}>
-        <Text
+        <Avatar.Icon
+          size={50}
+          icon="chevron-left"
           style={{
-            //padding: 20,
-            //backgroundColor: colors.buttonBg,
-            color: colors.buttonIcon,
-            fontWeight: 'bold',
-            fontSize: 30,
-          }}>
-          {'<'}
-        </Text>
+            borderRadius: 10,
+            backgroundColor: colors.buttonBg,
+          }}
+          color={colors.buttonIcon}
+        />
       </View>
       <Text
         style={{
