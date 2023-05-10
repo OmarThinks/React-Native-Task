@@ -2,7 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {Provider as PaperProvider} from 'react-native-paper';
-import Home from './src/screens/Home/Home';
+import {Home} from './src/screens';
 
 const Stack = createNativeStackNavigator();
 
