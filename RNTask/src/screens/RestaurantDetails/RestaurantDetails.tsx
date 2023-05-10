@@ -1,6 +1,6 @@
 import {AppBar} from '@root/components';
 import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
+import {SafeAreaView, ScrollView, StatusBar, View} from 'react-native';
 import {useAppTheme} from '../../theme/theme';
 import MapView from 'react-native-maps';
 import {Marker} from 'react-native-maps';
@@ -10,28 +10,35 @@ const RestaurantDetails = () => {
 
   return (
     <SafeAreaView style={{backgroundColor: colors.appBg}}>
-      <StatusBar />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
+      <View
         style={{
           minHeight: '100%',
         }}>
+        <StatusBar />
+
         <AppBar header="Restaurants" hasBack />
 
-        <MapView
-          initialRegion={{
-            latitude: 37.78825,
-            longitude: -122.4324,
-            latitudeDelta: 0.0922,
-            longitudeDelta: 0.0421,
-          }}
+        <View
           style={{
-            width: '100%',
-            height: 300,
+            //backgroundColor: 'red',
+            flexGrow: 1,
           }}>
-          <Marker coordinate={{latitude: 37.78825, longitude: -122.4324}} />
-        </MapView>
-      </ScrollView>
+          <MapView
+            initialRegion={{
+              latitude: 37.78825,
+              longitude: -122.4324,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }}
+            style={{
+              width: '100%',
+              //height: 500,
+              flexGrow: 1,
+            }}>
+            <Marker coordinate={{latitude: 37.78825, longitude: -122.4324}} />
+          </MapView>
+        </View>
+      </View>
     </SafeAreaView>
   );
 };

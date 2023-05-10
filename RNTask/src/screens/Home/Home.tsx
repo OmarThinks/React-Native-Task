@@ -71,8 +71,16 @@ const Home = () => {
           minHeight: '100%',
         }}>
         <AppBar header="Restaurants" />
-        <View>
-          <Text>Go to RestaurantDetails</Text>
+        <View
+          style={{
+            height: 100,
+            backgroundColor: 'lime',
+            borderRadius: 20,
+            overflow: 'hidden',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <Text>Go to RestaurantDetails screen</Text>
           <TouchFiller
             onPress={() => {
               navigation.navigate('RestaurantDetails');
