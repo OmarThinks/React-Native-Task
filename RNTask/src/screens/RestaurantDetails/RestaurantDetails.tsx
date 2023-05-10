@@ -12,7 +12,6 @@ const RestaurantDetails = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={{
-          //backgroundColor: colors.primary,
           minHeight: '100%',
         }}>
         <AppBar header="Restaurants" hasBack />

@@ -1,8 +1,7 @@
-import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar, Text} from 'react-native';
-import {Button} from 'react-native-paper';
 import AppBar from '@root/components/AppBar/AppBar';
 import {useAppTheme} from '@root/theme/theme';
+import React from 'react';
+import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
 
 const Home = () => {
   const colors = useAppTheme().colors;

@@ -3,6 +3,7 @@ import {Text, View} from 'react-native';
 import {useAppTheme} from '@root/theme/theme';
 import {Avatar} from 'react-native-paper';
 import {TouchFiller} from '@root/components';
+import {useNavigation} from '@react-navigation/native';
 
 const AppBar = ({
   header,
@@ -12,6 +13,8 @@ const AppBar = ({
   hasBack?: boolean;
 }) => {
   const colors = useAppTheme().colors;
+
+  const navigation = useNavigation();
 
   const backButton = hasBack ? (
     <View
@@ -23,7 +26,11 @@ const AppBar = ({
         width: 50,
         height: 50,
       }}>
-      <TouchFiller onPress={() => {}} />
+      <TouchFiller
+        onPress={() => {
+          navigation.goBack();
+        }}
+      />
       <Avatar.Icon
         size={50}
         icon="chevron-left"
