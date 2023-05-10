@@ -1,10 +1,9 @@
-import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar, Text} from 'react-native';
-import {Button} from 'react-native-paper';
 import AppBar from '@root/components/AppBar/AppBar';
+import React from 'react';
+import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
 import {useAppTheme} from '@root/theme/theme';
 
-const Home = () => {
+const RestaurantDetails = () => {
   const colors = useAppTheme().colors;
 
   return (
@@ -16,10 +15,10 @@ const Home = () => {
           //backgroundColor: colors.primary,
           minHeight: '100%',
         }}>
-        <AppBar header="Restaurants" />
+        <AppBar header="Restaurants" hasBack />
       </ScrollView>
     </SafeAreaView>
   );
 };
 
-export default Home;
+export default RestaurantDetails;
