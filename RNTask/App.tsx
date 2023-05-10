@@ -1,23 +1,10 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar, Text} from 'react-native';
 import {Provider as PaperProvider} from 'react-native-paper';
-import {Button} from 'react-native-paper';
+import Home from './src/screens/Home/Home';
 
 const Stack = createNativeStackNavigator();
-
-function TestScreen(): JSX.Element {
-  return (
-    <SafeAreaView>
-      <StatusBar />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <Text>Hey</Text>
-        <Button icon="camera">Press me</Button>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
 
 const App = () => {
   return (
@@ -27,7 +14,7 @@ const App = () => {
           screenOptions={{
             headerShown: false,
           }}>
-          <Stack.Screen name="Home" component={TestScreen} />
+          <Stack.Screen name="Home" component={Home} />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>

@@ -2,8 +2,29 @@
 
 
 
-- TODO: Add React Native papaer
-- Make rnp theme work
-- Make icons work
-
+- TODO: Home Screen
+- TODO: AppBar
+- TODO: Install React Query
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
+- TODO: 
 
