@@ -2,7 +2,6 @@
 
 
 
-- TODO: Home Screen
 - TODO: AppBar
 - TODO: Install React Query
 - TODO: 
