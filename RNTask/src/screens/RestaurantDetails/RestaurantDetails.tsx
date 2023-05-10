@@ -3,6 +3,7 @@ import React from 'react';
 import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
 import {useAppTheme} from '../../theme/theme';
 import MapView from 'react-native-maps';
+import {Marker} from 'react-native-maps';
 
 const RestaurantDetails = () => {
   const colors = useAppTheme().colors;
@@ -27,8 +28,9 @@ const RestaurantDetails = () => {
           style={{
             width: '100%',
             height: 300,
-          }}
-        />
+          }}>
+          <Marker coordinate={{latitude: 37.78825, longitude: -122.4324}} />
+        </MapView>
       </ScrollView>
     </SafeAreaView>
   );
