@@ -20,6 +20,14 @@ const AppBar = ({
         alignItems: 'center',
         //backgroundColor: 'red',
       }}>
+      <View
+        style={
+          {
+            //backgroundColor:colors.
+          }
+        }>
+        <Text>{'>'}</Text>
+      </View>
       <Text
         style={{
           fontSize: 25,
@@ -28,6 +36,7 @@ const AppBar = ({
         }}>
         {header}
       </Text>
+      <View />
     </View>
   );
 };
