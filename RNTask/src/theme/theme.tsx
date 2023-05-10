@@ -1,6 +1,6 @@
 import {MD3LightTheme as DefaultTheme} from 'react-native-paper';
 
-const theme = {
+export const lightTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
@@ -11,7 +11,6 @@ const theme = {
     header: '#000000',
     imageHeader: '#FFFFFF',
     smallButtonText: '#000000',
+    appBg: '#FFFFFF',
   },
 };
-
-export default theme;

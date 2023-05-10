@@ -3,12 +3,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {Provider as PaperProvider} from 'react-native-paper';
 import {Home} from './src/screens';
+import {lightTheme} from './src/theme/theme';
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <PaperProvider>
+    <PaperProvider theme={lightTheme}>
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{
