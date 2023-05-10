@@ -38,9 +38,15 @@ const Home = () => {
   const queryClient = useQueryClient();
 
   const {data, error, isLoading} = useSWR(
-    'https://api.github.com/repos/tannerlinsley/react-query',
+    'https://api.yelp.com/v3/businesses/search',
     fetcher,
   );
+
+  let toRender = null;
+
+  if (!error && !isLoading) {
+    toRender = <></>;
+  }
 
   /*
   const {data, isError, isFetched, error} = useQuery({
