@@ -18,7 +18,7 @@ const Home = () => {
         }}>
         <Text>Hey</Text>
         <Button icon="camera">Press me</Button>
-        <AppBar />
+        <AppBar header="Restaurants" />
       </ScrollView>
     </SafeAreaView>
   );

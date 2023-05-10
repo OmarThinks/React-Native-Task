@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {useTheme} from 'react-native-paper';
 
 const AppBar = ({
   header,
@@ -8,6 +9,7 @@ const AppBar = ({
   header: string;
   hasBack: boolean;
 }) => {
+  const colors = useTheme().colors;
   return (
     <View
       style={{
@@ -15,8 +17,17 @@ const AppBar = ({
         flexDirection: 'row',
         alignSelf: 'stretch',
         justifyContent: 'space-between',
+        alignItems: 'center',
+        //backgroundColor: 'red',
       }}>
-      <Text>AppBar</Text>
+      <Text
+        style={{
+          fontSize: 25,
+          color: colors.header,
+          fontWeight: 'bold',
+        }}>
+        {header}
+      </Text>
     </View>
   );
 };
