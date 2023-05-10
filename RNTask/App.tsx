@@ -1,7 +1,7 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import {Provider as PaperProvider} from 'react-native-paper';
+import {Provider as PaperProvider, useTheme} from 'react-native-paper';
 import {Home} from './src/screens';
 import {lightTheme} from './src/theme/theme';
 
@@ -23,3 +23,7 @@ const App = () => {
 };
 
 export default App;
+
+export type AppTheme = typeof lightTheme;
+
+export const useAppTheme = () => useTheme<AppTheme>();

@@ -1,4 +1,5 @@
 import {MD3LightTheme as DefaultTheme} from 'react-native-paper';
+import {useTheme} from 'react-native-paper';
 
 export const lightTheme = {
   ...DefaultTheme,
@@ -14,3 +15,7 @@ export const lightTheme = {
     appBg: '#FFFFFF',
   },
 };
+
+export type AppTheme = typeof lightTheme;
+
+export const useAppTheme = () => useTheme<AppTheme>();
