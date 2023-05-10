@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import {useTheme} from 'react-native-paper';
+import {useAppTheme} from '@root/theme/theme';
 
 const AppBar = ({
   header,
